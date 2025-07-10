@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Products - Mini Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="mini.png" alt="Logo" width="30" height="30"> Mini Store 😍
+    </a>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link active" href="product.html">Products</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      <li class="nav-item position-relative">
+        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+          🛒 Cart
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+            id="cart-count">0</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container my-5">
+  <h2 class="mb-4 text-center">Women's Fashion 👗</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+   
+    <div class="col">
+      <div class="card text-center">
+        <img src="floral.jpg" class="card-img-top mx-auto mt-3" alt="Floral Kurti">
+        <div class="card-body">
+          <h5 class="card-title">Floral Kurti</h5>
+          <p class="card-text">Elegant and breezy for summer outings.</p>
+          <h6 class="text-success">₹899</h6>
+          <button class="btn btn-cart" data-name="Floral Kurti" data-price="899">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card text-center">
+        <img src="saree.jpg" class="card-img-top mx-auto mt-3" alt="Silk Saree">
+        <div class="card-body">
+          <h5 class="card-title">Silk Saree</h5>
+          <p class="card-text">Traditional silk with beautiful border.</p>
+          <h6 class="text-success">₹2499</h6>
+          <button class="btn btn-cart" data-name="Silk Saree" data-price="2499">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card text-center">
+        <img src="heels.jpg" class="card-img-top mx-auto mt-3" alt="Stylish Heels">
+        <div class="card-body">
+          <h5 class="card-title">Stylish Heels</h5>
+          <p class="card-text">Perfect for festive & party looks.</p>
+          <h6 class="text-success">₹1299</h6>
+          <button class="btn btn-cart" data-name="Stylish Heels" data-price="1299">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card text-center">
+        <img src="palazzo.jpg" class="card-img-top mx-auto mt-3" alt="Palazzo Pants">
+        <div class="card-body">
+          <h5 class="card-title">Palazzo Pants</h5>
+          <p class="card-text">Comfy and casual for everyday wear.</p>
+          <h6 class="text-success">₹699</h6>
+          <button class="btn btn-cart" data-name="Palazzo Pants" data-price="699">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card text-center">
+        <img src="scarf.jpg" class="card-img-top mx-auto mt-3" alt="Silk Scarf">
+        <div class="card-body">
+          <h5 class="card-title">Silk Scarf</h5>
+          <p class="card-text">Add charm to any outfit.</p>
+          <h6 class="text-success">₹299</h6>
+          <button class="btn btn-cart" data-name="Silk Scarf" data-price="299">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card text-center">
+        <img src="blouse.jpg" class="card-img-top mx-auto mt-3" alt="Designer Blouse">
+        <div class="card-body">
+          <h5 class="card-title">Designer Blouse</h5>
+          <p class="card-text">Elegant design for sarees.</p>
+          <h6 class="text-success">₹499</h6>
+          <button class="btn btn-cart" data-name="Designer Blouse" data-price="499">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card text-center">
+        <img src="lehenga.jpg" class="card-img-top mx-auto mt-3" alt="Lehenga Choli">
+        <div class="card-body">
+          <h5 class="card-title">Lehenga Choli</h5>
+          <p class="card-text">Festive wear with embroidery.</p>
+          <h6 class="text-success">₹3499</h6>
+          <button class="btn btn-cart" data-name="Lehenga Choli" data-price="3499">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="col">
+      <div class="card text-center">
+        <img src="handbag.jpg" class="card-img-top mx-auto mt-3" alt="Handbag">
+        <div class="card-body">
+          <h5 class="card-title">Trendy Handbag</h5>
+          <p class="card-text">Stylish and spacious.</p>
+          <h6 class="text-success">₹1099</h6>
+          <button class="btn btn-cart" data-name="Trendy Handbag" data-price="1099">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card text-center">
+        <img src="earrings.jpg" class="card-img-top mx-auto mt-3" alt="Earrings">
+        <div class="card-body">
+          <h5 class="card-title">Ethnic Earrings</h5>
+          <p class="card-text">Complete your festive look.</p>
+          <h6 class="text-success">₹199</h6>
+          <button class="btn btn-cart" data-name="Ethnic Earrings" data-price="199">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cart_m" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="cart_m">🛒 Your Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <ul id="cart-items" class="list-group mb-3"></ul>
+        <div class="text-end fw-bold fs-5" id="total-price">Total : Rs.0</div>
+      </div>
+
+      <div class="modal-footer d-flex justify-content-between">
+        <button id="clear-cart" class="btn btn-danger">Clear Cart</button>
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center py-4">
+  <div class="container">
+    <h5>MINISTORE 🛍️</h5>
+    <p>Your one-stop shop for all things awesome.</p>
+
+    <div class="mb-3">
+      <a href="index.html" class="text-light text-decoration-none me-3">Home</a>
+      <a href="product.html" class="text-light text-decoration-none me-3">Products</a>
+      <a href="contact.html" class="text-light text-decoration-none">Contact</a>
+    </div>
+
+    <p class="mb-1">📧 support@ministore.com</p>
+    <p class="mb-3">📍 Dindigul, Tamil Nadu</p>
+
+    <small>© 2025 MINISTORE. All rights reserved.</small>
+  </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
