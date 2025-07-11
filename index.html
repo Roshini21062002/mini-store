@@ -12,7 +12,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="mini.png" alt="Logo" width="30" height="30">     Mini Store 😍 </a>
+        <img src="mini.png" alt="Logo" width="30" height="30"> Mini Store 😍 </a>
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
@@ -71,7 +71,7 @@
     </div>
   </div>
 
-  <!-- Cart Modal -->
+ 
   <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cart_m" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -86,10 +86,12 @@
           <div class="text-end fw-bold fs-5" id="total-price">Total : Rs.0</div>
         </div>
 
-    
+
         <div class="modal-footer d-flex justify-content-between">
-          <button id="clear-cart" class="btn btn-danger">Clear Cart</button>
           <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         
+          <button id="clear-cart" class="btn btn-danger">Clear Cart</button>
+
         </div>
 
       </div>
@@ -97,159 +99,165 @@
   </div>
 
   <div class="container my-5">
-  <h2 class="mb-4 text-center">Mens Picks 🧍‍♂️</h2>
+    <h2 class="mb-4 text-center">Mens Picks 🧍‍♂️</h2>
 
-  <div id="fashionCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
+    <div id="fashionCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
 
-    
-      <div class="carousel-item active">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img src="cotton.jpg" class="card-img-top" alt="Cotton Shirt">
-              <div class="card-body text-center">
-                <h5 class="card-title">Cotton Shirt</h5>
-                <p class="card-text">Soft, breathable, and stylish.</p>
-                <h6 class="text-success">₹799</h6>
-                <button class="btn btn-primary w-100 btn-cart" data-name="Cotton Shirt" data-price="799">Add to Cart</button>
+
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="cotton.jpg" class="card-img-top" alt="Cotton Shirt">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Cotton Shirt</h5>
+                  <p class="card-text">Soft, breathable, and stylish.</p>
+                  <h6 class="text-success">₹799</h6>
+                  <button class="btn btn-primary w-100 btn-cart" data-name="Cotton Shirt" data-price="799">Add to
+                    Cart</button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img src="jeans.jpg" class="card-img-top" alt="Denim Jeans">
-              <div class="card-body text-center">
-                <h5 class="card-title">Denim Jeans</h5>
-                <p class="card-text">Comfortable and durable.</p>
-                <h6 class="text-success">₹1199</h6>
-                <button class="btn btn-primary w-100 btn-cart" data-name="Denim Jeans" data-price="1199">Add to Cart</button>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="jeans.jpg" class="card-img-top" alt="Denim Jeans">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Denim Jeans</h5>
+                  <p class="card-text">Comfortable and durable.</p>
+                  <h6 class="text-success">₹1199</h6>
+                  <button class="btn btn-primary w-100 btn-cart" data-name="Denim Jeans" data-price="1199">Add to
+                    Cart</button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img src="hooo.jpg" class="card-img-top" alt="Hoodie">
-              <div class="card-body text-center">
-                <h5 class="card-title">Hoodie</h5>
-                <p class="card-text">Warm and trendy for winter.</p>
-                <h6 class="text-success">₹999</h6>
-                <button class="btn btn-primary w-100 btn-cart" data-name="Hoodie" data-price="999">Add to Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-       <div class="carousel-item">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img src="swe.jpg" class="card-img-top" alt="Sweater">
-              <div class="card-body text-center">
-                <h5 class="card-title">Sweater</h5>
-                <p class="card-text">Warm and elegant.</p>
-                <h6 class="text-success">₹899</h6>
-                <button class="btn btn-primary w-100 btn-cart" data-name="Sweater" data-price="899">Add to Cart</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img src="jac.jpg" class="card-img-top" alt="Jacket">
-              <div class="card-body text-center">
-                <h5 class="card-title">Jacket</h5>
-                <p class="card-text">Perfect for cold weather.</p>
-                <h6 class="text-success">₹1499</h6>
-                <button class="btn btn-primary w-100 btn-cart" data-name="Jacket" data-price="1499">Add to Cart</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img src="track.jpg" class="card-img-top" alt="Track Pants">
-              <div class="card-body text-center">
-                <h5 class="card-title">Track Pants</h5>
-                <p class="card-text">Flexible and casual.</p>
-                <h6 class="text-success">₹599</h6>
-                <button class="btn btn-primary w-100 btn-cart" data-name="Track Pants" data-price="599">Add to Cart</button>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="hooo.jpg" class="card-img-top" alt="Hoodie">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Hoodie</h5>
+                  <p class="card-text">Warm and trendy for winter.</p>
+                  <h6 class="text-success">₹999</h6>
+                  <button class="btn btn-primary w-100 btn-cart" data-name="Hoodie" data-price="999">Add to
+                    Cart</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="swe.jpg" class="card-img-top" alt="Sweater">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Sweater</h5>
+                  <p class="card-text">Warm and elegant.</p>
+                  <h6 class="text-success">₹899</h6>
+                  <button class="btn btn-primary w-100 btn-cart" data-name="Sweater" data-price="899">Add to
+                    Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="jac.jpg" class="card-img-top" alt="Jacket">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Jacket</h5>
+                  <p class="card-text">Perfect for cold weather.</p>
+                  <h6 class="text-success">₹1499</h6>
+                  <button class="btn btn-primary w-100 btn-cart" data-name="Jacket" data-price="1499">Add to
+                    Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="track.jpg" class="card-img-top" alt="Track Pants">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Track Pants</h5>
+                  <p class="card-text">Flexible and casual.</p>
+                  <h6 class="text-success">₹599</h6>
+                  <button class="btn btn-primary w-100 btn-cart" data-name="Track Pants" data-price="599">Add to
+                    Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
       </div>
 
-      
 
-
+      <button class="carousel-control-prev" type="button" data-bs-target="#fashionCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#fashionCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
-
-    
-    <button class="carousel-control-prev" type="button" data-bs-target="#fashionCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#fashionCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
   </div>
-</div>
 
-<!-- Testimonials Section -->
-<div class="container my-5">
-  <h3 class="text-center mb-4">
-    <span class="badge bg-secondary"><i class="bi bi-chat-dots-fill"></i> What Our Customers Say</span>
-  </h3>
-  <div class="row g-4 text-center">
+  
+  <div class="container my-5">
+    <h3 class="text-center mb-4">
+      <span class="badge bg-secondary"><i class="bi bi-chat-dots-fill"></i> What Our Customers Say</span>
+    </h3>
+    <div class="row g-4 text-center">
 
-    <div class="col-md-4">
-      <div class="border p-3 rounded shadow-sm h-100">
-        <p>Great quality products and super fast delivery!</p>
-        <p class="text-warning">★★★★★</p>
-        <strong>– Roshini </strong>
+      <div class="col-md-4">
+        <div class="border p-3 rounded shadow-sm h-100">
+          <p>Great quality products and super fast delivery!</p>
+          <p class="text-warning">★★★★★</p>
+          <strong>– Roshini </strong>
+        </div>
       </div>
-    </div>
 
-    <div class="col-md-4">
-      <div class="border p-3 rounded shadow-sm h-100">
-        <p> The designs are so trendy and affordable.</p>
-        <p class="text-warning">★★★</p>
-        <strong>– Mathew</strong>
+      <div class="col-md-4">
+        <div class="border p-3 rounded shadow-sm h-100">
+          <p> The designs are so trendy and affordable.</p>
+          <p class="text-warning">★★★</p>
+          <strong>– Mathew</strong>
+        </div>
       </div>
-    </div>
 
-    <div class="col-md-4">
-      <div class="border p-3 rounded shadow-sm h-100">
-        <p>Amazing support and easy-to-use website. Definitely shopping again!</p>
-        <p class="text-warning">★★★★</p>
-        <strong>– Lily </strong>
+      <div class="col-md-4">
+        <div class="border p-3 rounded shadow-sm h-100">
+          <p>Amazing support and easy-to-use website. Definitely shopping again!</p>
+          <p class="text-warning">★★★★</p>
+          <strong>– Lily </strong>
+        </div>
       </div>
-    </div>
 
+    </div>
   </div>
-</div>
 
 
-<footer class="bg-dark text-light text-center py-4">
-  <div class="container">
-    <h5>MINISTORE 🛍️</h5>
-    <p>Your one-stop shop for all things awesome.</p>
+  <footer class="bg-dark text-light text-center py-4">
+    <div class="container">
+      <h5>MINISTORE 🛍️</h5>
+      <p>Your one-stop shop for all things awesome.</p>
 
-    <div class="mb-3">
-      <a href="index.html" class="text-light text-decoration-none me-3">Home</a>
-      <a href="product.html" class="text-light text-decoration-none me-3">Products</a>
-      <a href="contact.html" class="text-light text-decoration-none">Contact</a>
+      <div class="mb-3">
+        <a href="index.html" class="text-light text-decoration-none me-3">Home</a>
+        <a href="product.html" class="text-light text-decoration-none me-3">Products</a>
+        <a href="contact.html" class="text-light text-decoration-none">Contact</a>
+      </div>
+
+      <p class="mb-1">📧 support@ministore.com</p>
+      <p class="mb-3">📍 Dindigul, Tamil Nadu</p>
+
+      <small>© 2025 MINISTORE. All rights reserved.</small>
     </div>
-
-    <p class="mb-1">📧 support@ministore.com</p>
-    <p class="mb-3">📍 Dindigul, Tamil Nadu</p>
-
-    <small>© 2025 MINISTORE. All rights reserved.</small>
-  </div>
-</footer>
+  </footer>
 
 
 
